@@ -1,0 +1,207 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PDF Table to HTML</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+                vertical-align: top;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Extracted Table from PDF</h1>
+        <table>
+            <tr>
+                <th>WBS</th>
+                <th>Activity</th>
+                <th>Description</th>
+                <th>Artifact</th>
+                <th>OPR/Supplier</th>
+                <th>References</th>
+            </tr>
+    <tr><td>1.2</td><td>Characterize theSystem</td><td></td><td></td><td></td><td></td></tr><tr><td>1.2.1</td><td>User/StakeholderRequirements andInformation</td><td>Review and understand what the customerrequirements, capabilities, desired effects are.(IS-ICD [CSAs], IS-CDD [CSAs],CONOPS/CONEMP, SRD, etc.).  During the JCIDSdocument approval cycle, ensure that SSWGrepresentation and High Performance Team(HPT) are supporting one another.The HPT provides User inputs to the SafetyCritical Functions (SCFs), Mission CriticalFunctions (MCFs), and functions associated withCPI to inform the top-level architecture and theSystem Survivability Key PerformanceParameter (KPP)/CSAs (Cyber SurvivabilityAttributes) appropriately.NOTE: If the program is Pre- Milestone B, thisstep will generate information to bedocumented in the IS-CDDNOTE:  The requirements need to be testableand measurable.  This review is also the firststep to beginning the MBCRA for test andevaluation.</td><td>• AcquisitionStrategy (AS)• IS-CDD• Survivability andVulnerabilityProgram Plan(SVPP)[applicable toSpace systems]</td><td>• User• SSWG• SurvivabilityWorkingGroup(SWG)</td><td>• Appendix A: USAF SSE AcquisitionGuidebook (1.1 IS-ICD, IS-CDD)• CJCSI 5123.01H• Cyber Survivability EndorsementImplementation Guide• DAG Chapter 3 Section 4.2.1• AFI 99-103• DoD Cybersecurity Test andEvaluation Guidebook (Phase 1).• “Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020• SMC-S-014 (2010), AFSC Standard:Survivability Program Managementfor Space</td></tr><tr><td>1.2.2</td><td>Develop SystemDescription</td><td>Provide a high-level description of the systemand the technology of which it is comprised.Describe the system (including systemboundaries and interconnections). For allinterconnections, determine requirementsneeded to achieve Authorization to Operate(ATO).</td><td>• PPP Section 1.0and Appendix E,CybersecurityStrategy (CS)</td><td>• SSWG</td><td>• DoDI 8510.01• AFPAM 63-113• NIST SP800-37 Risk ManagementFramework for InformationSystems and Organizations: ASystem Life Cycle Approach forSecurity and Privacy• Appendix B: USAF CombinedProcess Guide for CPI and CCIdentification, paragraph 5.5.1• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020• DoD Cybersecurity Test andEvaluation Guidebook (Phases 1and 2)</td></tr><tr><td>1.2.3</td><td>ID MissionEnvironment(s)</td><td>Identify the environments the system is plannedto be operated and maintained in, to includegeographical areas for deployment/operationsand applicable kinetic and cyber threatenvironments.ME (Mission Engineering) and MIM (MissionIntegration Management) activities will beperformed as part of concept and systemdevelopment to inform developmental decisionsand ensure the department is systematicallyinvesting in the appropriate capabilities, in anintegrated and cost effective manner, to meetmission needs.Include system-unique maintenance/testequipment and training systems if applicable.</td><td>• PPP Section 1.1</td><td>• SSWG</td><td>• United States Code (USC) Title 10,§ 133a, 133b• DoDI 5000.88• DoDI 5000.90• AFI 99-103• Appendix B: USAF CombinedProcess Guide for CPI and CCIdentification• DoD Cybersecurity Test andEvaluation Guidebook (Phases 1and 2)• DoD Mission EngineeringGuidebook</td></tr><tr><td>1.2.4</td><td>Bound the System/IDSystem Boundary</td><td>Identify the system boundaries,interconnections/interfaces, and dependenciesto include what systems are internal/external tothe system boundary. Identify missiondependence that are affected by eitherconnectivity into or out from the space andweapon system. When identifying internal andexternal dependencies, seek to identify contentand connectivity dependencies that canadversely affect system mission, systemcontent, or connectivity that can adverselyaffect the mission of a connected system.NOTE:  Based on maturity of program, details ofthe internal and external boundaries may ormay not be known.  If unknown, ensurebounding the system is started no later thanSystem Functional Review (SFR). Systemboundaries should be updated as moreinformation becomes available.</td><td>• PPP Section 1.1and Appendix  E</td><td>• SSWG</td><td>• Appendix B: USAF CombinedProcess Guide for CPI and CCIdentification• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• DoD Cybersecurity Test andEvaluation Guidebook (Phases 1and 2)</td></tr><tr><td>1.2.5</td><td>Conduct CPIIdentification/Analysis</td><td>CPI should be identified early and reassessedthroughout the life cycle of the program, toinclude:•  Prior to each acquisition milestone•  Prior to each system’s engineeringtechnical review•  Prior to each phase of Cybersecurity andCyber Resiliency testing (e.g., Phases 3 –6)•  Throughout operations and sustainment•  During software/hardware technologyupdates.•  Use applicable CPI tools, Subject MatterExpert (SME), functional decomposition,and data flows to identify candidate andfinal CPI, as well as, its location.  Use thefunctional decomposition, identifiedboundaries and system interfaces todevelop the list of critical componentsand determine its criticality.•  Classifying CPI COC as per the AT FOUOSCG, Table Entry VI.13.•  NOTE:  PO should follow internal PEODirectorate level coordination processto request final MDA approval.Programs without CPI are still requiredto do a PPP.NOTE:  CPI protection should commence soonafter the CPI has been identified, and, like CPIidentification, CPI protection should continuethroughout the life cycle of the program. The POshould work with the AT office early to avoidcompromised components.</td><td>• PPP Section 2.2,Table 2.2-1,Section 3.0 andSection 4.0• Anti-Tamper Plan</td><td>• SSWG</td><td>• DoDI 5200.39• AFPAM 63-113• DAG Chapter 9• DoD Critical Program Information(CPI) Horizontal ProtectionGuidance (HPG)• DoD Anti-Tamper Desk Reference• Appendix B: USAF CombinedProcess Guide for CPI and CCIdentification• Appendix C: Functional ThreadAnalysis (FTA)• DoD Program Protection PlanOutline & Guidance• DoD Cybersecurity Test andEvaluation Guidebook (Phases 1and 2)</td></tr><tr><td>1.2.6</td><td>Functional ThreadAnalysis</td><td>Conduct the functional decomposition, criticalityanalysis, Vulnerability Analysis (VA) andgenerate Attack Path Vignettes (APV).</td><td>• CriticalityAnalysis Input,PPP, Appendix C• MBCRA Input</td><td>• SSWG</td><td>• Appendix A: USAF SSE AcquisitionGuidebook (1.1 IS-ICD, IS-CDD, and1.10 Risk Management)• Appendix C: Functional ThreadAnalysis• ISO 17666:  2016, Space Systems –Risk Management, 1st ed.• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)</td></tr><tr><td>1.2.6.1</td><td>Conduct FunctionalDecomposition</td><td>Decompose the system beginning with thehighest-level User requirements.Identify the system-level mission criticalfunctions, safety critical functions, and thefunctions associated with CPI.NOTE:  depending on the maturity of thesystem, the functional decomposition will havehigher fidelity.  Ultimately, the system should befunctionally decomposed to the individualcomponent level.</td><td>FTA Report</td><td>SSWG</td><td>• Appendix D: Attack Path Analysis(APA)</td></tr><tr><td>1.2.6.1.1</td><td>Conduct CriticalityAnalysis</td><td>An end-to-end functional decompositionperformed by systems engineers to identifymission critical functions and components.Includes identification of system missions,decomposition into the functions to performthose missions, and traceability to thehardware, software, and firmware componentsthat implement those functions. Criticality isassessed in terms of the impact of function orcomponent failure on the ability of thecomponent to complete the system mission(s).Understand the consequence associated withthe MCFs, SCFs, and functions associated withCPI in accordance with Section 1.10 of AppendixA: USAF SSE Acquisition Guidebook.Additionally, identify the cyber events,manmade or natural, that will result in thesystem's failure/degradation that affect themission capabilities as specified by theRequirements Approval Authority (RAA).</td><td>• CriticalityAnalysis, PPPAppendix C• MBCRA Input</td><td>• SSWG</td><td>• Appendix A: USAF SSE AcquisitionGuidebook (1.1 IS-ICD and IS-CDD,1.10 Risk Management).• Appendix B: USAF CombinedProcess Guide for CPI and CCIdentification.• Appendix D: Attack Path Analysis(APA).• (U) Anti-Tamper (AT) SecurityClassification Guide, 30 July 2020(U//FOUO).• ISO 17666:2016, Space Systems –Risk Management, 1st ed.• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2).• DoDI 5000.83 Tech and PP toMaintain Technological Advantage• DoDI 5000.85 Major CapabilityAcquisition• DoDI 5200.44 Protection of MCF toAchieve TSN• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020• National Space Traffic ManagementPolicy", Federal Register, Vol. 83,No. 120, Space Policy Directive 3,Section 2, p. 28970, 21 June 2018</td></tr><tr><td>1.2.6.1.2</td><td>Prioritize theFunctions</td><td>Prioritize the functions based on the Userrequirements, risk assessments, and intendedoperational environment (including threats).</td><td>• CriticalityAnalysis Input,PPP Appendix C• FTA Report• MBCRA Input</td><td>• SSWG</td><td>• Appendix A: USAF SSE AcquisitionGuidebook (1.1 IS-ICD, IS-CDD, and1.10 Risk Management)• ISO 17666:2016, Space Systems –Risk Management, 1st ed.• Appendix C: Functional ThreadAnalysis (FTA)• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2).• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020</td></tr><tr><td>1.2.6.2</td><td>Deleted.</td><td></td><td></td><td></td><td></td></tr><tr><td>1.2.6.3</td><td>Conduct Vulnerability 
+Analysis</td><td>Analyze inherited vulnerabilities from required 
+system of system connections, including access 
+points and attack paths.</td><td>• VulnerabilityAnalysis</td><td>• SSWG</td><td>• Appendix A: USAF SSE AcquisitionGuidebook (1.10 Risk Management)• Appendix C: Functional ThreadAnalysis (FTA) ISO 17666:2016,Space Systems – Risk Management,1st ed.• Appendix D: Attack Path Analysis(APA)• (U) Anti-Tamper (AT) SecurityClassification Guide, 30 July 2020(U//FOUO)• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020</td></tr><tr><td>1.2.6.3.1</td><td>Identify 
+Vulnerabilities</td><td>Identify all known and potential vulnerabilities. 
+ 
+A vulnerability is any weakness in system design, 
+development, production, or operation that can 
+be exploited to defeat a system’s mission 
+objectives or significantly degrade its 
+performance (including exfiltration of data, 
+which can be used to negatively impact mission 
+effectiveness of the targeted system or other 
+mission systems).  All aspects must be 
+considered to include the development, 
+production, test, and operational environments; 
+this includes both industry and Government 
+locations.</td><td>• PPP Section 5.2,Table 5.2-1• RiskManagementFramework forDoD IT Plan• Inputs toCybersecurityRisk assessment</td><td>• SSWG</td><td>• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA).• DoDI 8500.01• DoDI 8510.01• AFI 17-101• DoD Trusted Systems and Networks(TSN) Analysis• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020</td></tr><tr><td>1.2.6.3.2</td><td>Analyze Entry Access 
+Points and Attack 
+Path Vulnerabilities</td><td>Analyze cyber Entry Access Points (EAPs) and 
+Attack Paths. 
+ 
+Analyze EAPs and potential cyber vulnerabilities 
+that would allow threats to gain access to the 
+system’s CPI or CCs, or to trigger a component 
+malfunction, failure, or inability for the system 
+to perform its intended function. 
+ 
+Identify potential weaknesses in the component 
+design, architecture, or code that could be 
+potentially exploited to negatively impact the 
+integrity, confidentiality, and availability of 
+system data. 
+ 
+Identify the supply chain, development, 
+production, and test environments and 
+processes that would allow adversaries to 
+exfiltrate/gain access to CPI or introduce 
+components (hardware, software, and 
+firmware) that could cause the system to fail at 
+some later time. 
+ 
+Identify potential mission impacts if identified 
+data is compromised. 
+ 
+Complete / update the Functional Thread 
+Analysis per Appendix C: Functional Thread 
+Analysis.</td><td>• RiskManagementFramework forDoD IT Plan.• Inputs toCybersecurity riskassessment.• FTA Input.• APA Input.</td><td>• SSWG• CyWG</td><td>• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• DoD Trusted Systems and Networks(TSN) Analysis• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020</td></tr><tr><td>1.2.6.3.3</td><td>Generate Attack Path 
+Vignettes</td><td>Develop cyber-attack scenarios (i.e., Attack Path 
+Vignettes) that combine identified potential 
+cyber vulnerabilities into operationally 
+representative cyber-attack paths.  The Attack 
+Path Vignettes should identify attack path 
+nodes, methodologies, anticipated mission 
+impacts, risk ratings, and potential test 
+methodologies/resources.</td><td>• APA Input</td><td>• SSWG</td><td>• Appendix D: Attack Path Analysis(APA)</td></tr><tr><td>1.2.7</td><td>DELETED</td><td></td><td></td><td></td><td></td></tr><tr><td>1.2.8</td><td>DELETED</td><td></td><td></td><td></td><td></td></tr><tr><td>1.2.9</td><td>Conduct Threat 
+Analysis</td><td>Provide supporting Acquisition Intelligence unit 
+the known information developed in WBS 1.2.  
+Acquisition Intelligence unit performs an 
+updated likelihood for the overall risk 
+assessment based on known threat data. 
+ 
+NOTE:  The higher the fidelity of the information 
+provided to the Intelligence Community (e.g., 
+component part numbers if available), the 
+higher the fidelity and relevance of the 
+information the Intelligence Community can 
+provide.</td><td>• Inputs to RiskAssessment</td><td>• SSWG</td><td>• ISO 17666:2016, Space Systems –Risk Management• Appendix A: USAF SSE AcquisitionGuidebook (Risk Management).• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)</td></tr><tr><td>1.2.9.1</td><td>Determine Scope of 
+Threat Assessment</td><td>Consult with SSWG to establish scope and depth 
+of threat assessment to be performed.  Identify 
+operational scenarios and threat actors relevant 
+to the system.</td><td>• Documentationon bounds ofthreat analysis toinclude hardwareand softwarelistings, systemboundarydiagrams,systemsengineeringdrawings/DoDAFs</td><td>• SupportingAcq Intelunit• AFOSI</td><td>• United States Code (USC) Title 10,§ 133a, 133b• DoDI 5000.88• DoDI 5000.90• DoD Mission EngineeringGuidebook• AFI 99-103• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• WBS 1.2.3 (operationalenvironment, deploymentlocations/scenarios, AcquisitionIntelligence Guidebook (AIG))•  NIST SP800-30 r1.0 Tasks 1-2 and1-5•  DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)</td></tr><tr><td>1.2.9.2</td><td>ID Threat Sources</td><td>Determine threat sources to be incorporated 
+into analysis (e.g. adversary nation state, hacker 
+community, insider, supply chain, etc.).  
+Determine threat information sources (e.g. mine 
+existing intelligence/counterintelligence, 
+develop new production requirements, and 
+identify appropriate Production Centers for each 
+threat type).</td><td>• Documentationof threats to beconsidered andsources forintelligence oneach threat type• PPP Sections 5.0,5.1, Table 5.1-2• RiskManagementFramework forDoD IT Plan• OperationsSecurity (OPSEC)Plan</td><td>• SSWG• SupportingAcq. IntelUnit• AFOSI</td><td>• DoDI 5000.88• DoDI 5000.90• DoDI 8510.01• DoDI 8500.01• DoD Mission EngineeringGuidebook• AFMAN 14-401• AFI 17-203• AFMC Acquisition IntelligenceGuidebook (AIG)• NIST SP800-30 r1.0 Tasks 1-2 and 1-5</td></tr><tr><td>1.2.9.3</td><td>ID Threat Events</td><td>List possible ways threat sources could exploit 
+potential and known vulnerabilities (of 
+analogous systems).</td><td>• RiskManagementFramework forDoD IT Plan• OPSEC Plan</td><td>• SSWG• SupportingAcq Intelunit• AFOSI• DefenseIntelligenceAgency(DIA)• National Air& SpaceIntelligenceCenter(NASIC)</td><td>• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• DoDI 5000.86• DoDI 5000.90• DoDI 8510.01• DoDI 8500.01• AFI 63-101/20-101• AFMAN 14-401• NIST SP800-30 r1.0• Adversary Cyber Threat Analysis(ACTA) Process• DoD Trusted Systems and Networks(TSN) Analysis• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)</td></tr><tr><td>1.2.9.4</td><td>Conduct System 
+Research</td><td>Research the system's operation to include its 
+capabilities, functions, external interactions and 
+key dependencies, CONOPS, combat 
+environment, KPPs, etc.  Determine system's 
+cyber dependencies.  Identify existing 
+intelligence relevant to the system, its 
+capabilities, and the cyber operational 
+environment, taking into account adversary 
+cyber strategy and doctrine and relevant 
+operational scenarios.  Review analysis with 
+SSWG and refine/adjust as required. 
+ 
+NOTE:  Program will provide artifacts to 
+supporting Acquisition Intelligence Unit.</td><td>• ProductionRequirements(PR) Record Copy</td><td>• SupportingAcq IntelUnit</td><td>• DoDI 5000.83• DoDI 5000.90• DoDI 8510.01• DoDI 8500.01• Adversary Cyber Threat Assessment(ACTA) step #15• AFMC Acquisition IntelligenceGuidebook (AIG)• NIST SP800-30 r1.0• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)</td></tr><tr><td>1.2.9.5</td><td>Critical Intelligence 
+Parameter (CIP) 
+Breach Review</td><td>Assess the impact of changes to adversary 
+capabilities related to the CIP and determines if 
+the breach compromises mission effectiveness 
+of current or future capability solution(s).</td><td>• Cyber threat risk 
+matrices</td><td>• Supporting 
+• Acq Intel 
+Unit SSWG</td><td>CJCSI 5123.01H</td></tr><tr><td>1.2.9.6</td><td>Translate Intelligence/ 
+Counterintelligence 
+Risk</td><td>Use established methodologies, such as 
+Classified Information Compromise Assessment 
+(CICA) and its associated Damage Assessment 
+Report (DAR) to translate Intelligence 
+Community threat rankings to RMF-compatible 
+risk matrices.</td><td>• Cyber threat riskmatrices</td><td>• SupportingAcq IntelUnit• AFOSI</td><td>• DoDI 5000.86• DoDI 5000.90• DoDI 8500.01• DoDI 8510.01• Adversary Cyber Threat Assessment(ACTA) step #16• AFMC Acquisition IntelligenceGuidebook (AIG)• NIST SP800-30 r1.0</td></tr><tr><td>1.2.9.7</td><td>Deliver Threat 
+Assessment to SSWG</td><td>Provide completed forms, associated narrative, 
+and risk transition product to the SSWG.</td><td>• ThreatAssessmentdocumentation(as required):-  Cyber threatrisk matrices-  Overlays ofcyber threatson programdesigndocuments-  Cyber threatregister-  ProductionCenternarrative cyberthreat analyses-  Associatedbriefings</td><td>• SupportingAcq IntelUnit• AFOSI</td><td>• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• DoDI 5000.88• DoDI 5000.90• DoDI 8510.01• DoDI 8500.01• AFI 99-103• Adversary Cyber Threat Assessment(ACTA) step #16• AFMC Acquisition IntelligenceGuidebook (AIG)• NIST SP800-30 r1.0• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)</td></tr><tr><td>1.2.10</td><td>Unmitigated Initial 
+Risk Assessment</td><td>The unmitigated risk assessment is necessary to 
+allow the SSWG to examine the initial risks 
+within the system. The depth of the unmitigated 
+risk assessment will rely on the fidelity of 
+program information. 
+ 
+Identify SSE risks by pairing threat events and 
+vulnerabilities; consider all risks to include 
+CPI/CC/TSN/Cybersecurity and Security 
+Management/Information Protection. 
+ 
+Document SSE risks in the Program’s Risk 
+Register, and capture the resultant risk 
+assessment in the MBCRA products. 
+ 
+NOTE: This initial risk assessment is titled 
+“unmitigated” because the SSWG has not 
+established any SSE requirements or mitigations 
+based off the known information at this given 
+point in development. Some SSE considerations 
+may be documented in the User requirements, 
+and those will be further decomposed to 
+mitigate any risks identified in this step and 
+hereafter.</td><td>• Risk Assessment</td><td>• SSWG</td><td>• Appendix A: USAF SSE AcquisitionGuidebook (1.10 Risk Management)• ISO 17666:2016, Space Systems –Risk Management, 1st ed.• Appendix C: Functional ThreadAnalysis (FTA)• DoD Cybersecurity Test andEvaluation Guidebook (Phase 2)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020</td></tr><tr><td>1.2.10.1</td><td>Develop Initial 
+Recommendations</td><td>Develop initial set of recommendations that 
+address identified potential cyber 
+vulnerabilities.  
+ 
+Evaluate and provide recommendations for the 
+De-Identification of data, drawings and 
+information through a series of effective 
+approaches, algorithms, and tools. 
+ 
+Recommendations should include design 
+remediations, exploitation mitigations, test 
+support, and other assessment team 
+recommendations that could help drive a more 
+survivable system.</td><td>• Risk Assessment</td><td>• SSWG</td><td>• Appendix C: Functional ThreadAnalysis (FTA)• Appendix D: Attack Path Analysis(APA)• Cybersecurity Principles for SpaceSystems", Federal Register, Vol. 85,No. 176, Title 3, Space PolicyDirective 5, Section 4, p.56157, 4May 2020• NISTIR 8053, De-Identification ofPersonal Information</td></tr><tr><td>1.2.11</td><td>Draft Security 
+Classification Guide 
+(SCG)</td><td>Conduct appropriate information analysis in 
+order to identify, understand and protect the 
+information about the program that will require 
+classification, and marking considerations.  
+Incorporate the Cybersecurity Security 
+Classification/Declassification Guide for Air 
+Force Weapon Systems. 
+ 
+NOTE:  Ensure SCG addresses functional test 
+plans, cyber test plans, test reports, and 
+vulnerability information/findings, to include 
+potential vulnerability information contained in 
+the MBCRA.</td><td>• PPP, Appendix A(SCG)</td><td>• SSWG</td><td>• DoDI 5200.48• Cybersecurity SecurityClassification/DeclassificationGuide for Air Force WeaponSystems</td></tr>
+        </table>
+    </body>
+    </html>
+    

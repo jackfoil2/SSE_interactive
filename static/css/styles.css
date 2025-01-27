@@ -1,0 +1,65 @@
+/* General Body Styling */
+body {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: flex-start; /* Keeps the content at the top */
+    align-items: center; /* Centers content horizontally */
+    height: auto; /* Adjusts height based on content */
+    min-height: 100vh; /* Ensures it covers the viewport at minimum */
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Title Styling */
+h1 {
+    color: #0056b3; /* Blue color for the title */
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 20px; /* Space below the title */
+    text-shadow: 1px 1px 2px #ccc; /* Adds a subtle shadow */
+}
+
+/* Image Styling */
+img {
+    height: auto; /* Maintains aspect ratio */
+    border: 2px solid #ddd; /* Adds a light border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0 auto; /* Centers the image in its container */
+    max-width: none; /* Ensures the image is not scaled */
+}
+
+/* Paragraph Styling (Optional, for future use) */
+p {
+    font-size: 16px; /* Default font size */
+    line-height: 1.5; /* Better readability */
+    color: #333; /* Neutral dark gray for text */
+    margin: 10px 20px;
+}
+
+/* Link Styling (Optional, for internal navigation) */
+a {
+    text-decoration: none; /* Removes underline */
+    color: #0056b3; /* Matches title color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #003d80; /* Darker blue on hover */
+}
+
+.image-container {
+    position: relative; /* To position overlay boxes relative to the image */
+    display: inline-block;
+}
+
+/* Clickable Boxes Styling */
+.clickable-box {
+    position: absolute; /* Position relative to the container */
+    border: 2px solid rgba(0, 255, 0, 0.8); /* Green border */
+    background-color: rgba(0, 255, 0, 0.2); /* Semi-transparent green */
+    pointer-events: none; /* Allows clicks to pass through to <area> */
+}
+
+
+
